@@ -3,11 +3,11 @@ import { Request } from 'express';
 import { DtoService } from './dto.service';
 import { CreateDto } from './dto/create-dto.dto';
 
-@Controller('')
+@Controller()
 export class DtoController {
   constructor(private dtoService: DtoService) { }
 
-  @Post()
+  @Post('Agregar')
   createUser(@Body() newUser: CreateDto) {
       return this.dtoService.createUser(newUser);
 

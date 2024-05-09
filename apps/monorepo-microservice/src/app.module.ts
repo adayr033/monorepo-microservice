@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { DtoModule } from './dto/dto.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Dto } from './dto/entities/dto.entity';
+import { IndexController } from './index/index.controller';
 
 @Module({
   imports: [
@@ -34,7 +35,7 @@ import { Dto } from './dto/entities/dto.entity';
   ],
 
 
-  controllers: [AppController],
+  controllers: [AppController, IndexController],
   providers: [AppService],
 })
 export class AppModule {}

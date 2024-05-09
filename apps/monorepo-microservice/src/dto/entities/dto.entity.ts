@@ -6,7 +6,7 @@ export class Dto {
   @PrimaryGeneratedColumn()
     id: number
 
-    @Column({unique: true})
+    @Column()
     username: string
     
     @Column()
